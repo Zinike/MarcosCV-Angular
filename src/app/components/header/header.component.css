@@ -1,11 +1,35 @@
-* {
-    background-color: black;
-    color: azure;
+.contenedor {
+    position: fixed;
+    z-index: 100;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    background-color: #5d1cee;
+    color: whitesmoke;
+    align-items: center;
+    height: 7vh;
 }
+
 img {
-    height: 100px;
+    height: 100%;
 }
-a {
+
+ul {
+    display: flex;
+    align-items: flex-start;
+    align-content: center;
+    align-content: center;
+}
+
+ul a {
+    align-items: center;
+    align-content: center;
+    justify-content: center;
     text-decoration: none;
-    margin: 0 auto;
+    margin: 0 15px;
+    font-size: 20px;
+}
+
+a:hover {
+    color: wheat;
 }

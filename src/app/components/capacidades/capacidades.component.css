@@ -1,0 +1,27 @@
+.contenedor {
+    background-color: #5d1cee;
+    text-align: center;
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: auto;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    width: 450px;
+    box-shadow: 5px 5px 5px black;
+}
+
+.imagenes{
+    margin: 15px;;
+}
+
+ .imagen-de-tecn {
+    height: 150px;
+    width: 150px;
+ }

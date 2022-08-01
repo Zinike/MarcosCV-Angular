@@ -1,0 +1,22 @@
+.contenedor{
+    background-color: black;
+    height: 100vh;
+}
+
+.text {
+    padding: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    color: #5d1cee;
+    text-align: center;
+}
+
+img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 650px;
+}
