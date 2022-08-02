@@ -6,6 +6,9 @@
 
 .contactos {
     display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
     flex-direction: column;
 }
 
@@ -20,6 +23,7 @@ button {
     box-shadow: -5px -5px 15px #444, 5px 5px 15px #222, inset 5px 5px 10px #444, inset -5px -5px 10px #222;
     color: #777;
     font-size: 16px;
+    
 }
 
 button:hover {

@@ -40,3 +40,11 @@ a {
   color: #222;
   text-decoration: none;
 }
+
+button {
+  display: block;
+  border-radius: 15px;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
