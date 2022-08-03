@@ -18,6 +18,10 @@
   font-family: 'Roboto Mono', monospace;
 }
 
+section {
+  margin: 50px 0;
+}
+
 h1 {
   font-size: 8rem;
 }
