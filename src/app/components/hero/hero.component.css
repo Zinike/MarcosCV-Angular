@@ -11,12 +11,12 @@
     align-content: center;
     align-items: center;
     color: #5d1cee;
-    text-align: center;
+    text-align: left;
 }
 
 img {
     position: absolute;
     bottom: 0;
     right: 0;
-    height: 650px;
+    height: 600px;
 }
