@@ -1,4 +1,5 @@
 .contenedor {
+    padding: 50px 0;
     background-color: #5d1cee;
     text-align: center;
 }
@@ -6,7 +7,7 @@
 .cards {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     margin: auto;
 }
 .card {
