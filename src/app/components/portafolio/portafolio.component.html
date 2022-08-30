@@ -3,10 +3,10 @@
         <h2>¡Mis páginas hechas!</h2>
         <div class="cards">
             <div class="card" *ngFor="let portafolio of portafolio" >
-                <img src="{{portafolio.imagen}}" alt="logo de CB negociso inmobiliarios">
+                <img src="{{portafolio.imagen}}" alt="Logo">
                 <h3>{{portafolio.titulo}}</h3>
-                <button><a href="{{portafolio.urlgit}}" target="_blank">GitHub</a></button>
-                <button><a href="{{portafolio.urlpagina}}" target="_blank">Visitar Página</a></button>
+                <a href="{{portafolio.urlgit}}" target="_blank"><button>GitHub</button></a>
+                <a href="{{portafolio.urlpagina}}" target="_blank"><button>Visitar Página</button></a>
             </div>
         </div>
     </div>

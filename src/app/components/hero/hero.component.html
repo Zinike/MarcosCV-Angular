@@ -1,7 +1,7 @@
 <section id="hero">
-    <div class="contenedor">
-        <img src="./assets/Imagenes/selfie.png" alt="selfie">
-        <div class="text" *ngIf="usuario">
+    <div class="contenedor" *ngIf="usuario">
+        <img src="{{usuario.fotoperfil}}" alt="selfie">
+        <div class="text">
             <h1>{{usuario.nombre}}</h1>
             <q>Memento Vivere</q>
         </div>
