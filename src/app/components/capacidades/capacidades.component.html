@@ -2,36 +2,9 @@
    <div class="contenedor">
       <h2>¡Tecnologias que manejo!</h2>
       <div class="cards">
-        <div class="card">
-          <h3>Básico & Fundamental</h3>
-            <div class="imagenes">
-              <img class="imagen-de-tecn" src="./assets/Iconos/html-5.png" alt="HTML">
-              <img class="imagen-de-tecn" src="./assets/Iconos/css.png" alt="CSS">
-              <img class="imagen-de-tecn" src="./assets/Iconos/js.png" alt="JS">
-            </div>
-        </div>
-
-        <div class="card">
-          <h3>Más es mejor</h3>
-          <div class="imagenes">
-            <img class="imagen-de-tecn" src="./assets/Iconos/angular.png" alt="ANGULAR">
-          </div>
-        </div>
-
-        <div class="card">
-          <h3>Lo que hay detrás</h3>
-          <div class="imagenes">
-            <img class="imagen-de-tecn" src="./assets/Iconos/php.png" alt="PHP">
-            <img class="imagen-de-tecn" src="./assets/Iconos/node-js.png" alt="NODE">
-            <img class="imagen-de-tecn" src="./assets/Iconos/mysql.png" alt="MYSQL">
-          </div>
-        </div>
-
-        <div class="card">
-          <h3>Cositas que suman</h3>
-          <div class="imagenes">
-            <img class="imagen-de-tecn" src="./assets/Iconos/git.png" alt="GIT">
-          </div>
+        <div *ngFor="let capacidad of capacidades" class="card">
+          <div class="titulo">{{capacidad.categoria}}</div>
+          <div class="imagen">{{capacidad.imagen}}</div>
         </div>
       </div>
   </div>

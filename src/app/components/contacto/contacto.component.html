@@ -1,10 +1,10 @@
 <section id="contacto">
     <div class="contenedor">
         <h2>Contacta conmigo</h2>
-        <div class="contactos">
+        <div *ngIf="usuario" class="contactos">
             <a href="https://walink.co/6da2f8" target="_blank"><button class="red">Whatsapp</button></a>
             <a href="https://t.me/marcoszinga" target="_blank"><button class="red">Telegram</button></a>
-            <a href="mailto:marcoszinga94@gmail.com" target="_blank"><button class="red">E-Mail</button></a>
+            <a href="mailto:'{{usuario.email}}'" target="_blank"><button class="red">E-Mail</button></a>
             <a href="https://www.linkedin.com/in/marcos-zingaretti/" target="_blank"><button class="red">LinkedIn</button></a>
         </div>
     </div>

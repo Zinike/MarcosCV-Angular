@@ -1,8 +1,8 @@
 <section id="hero">
     <div class="contenedor">
         <img src="./assets/Imagenes/selfie.png" alt="selfie">
-        <div class="text">
-            <h1>Marcos Zingaretti</h1>
+        <div *ngIf="usuario" class="text">
+            <h1>{{usuario.nombre}}</h1>
             <q>Memento Vivere</q>
         </div>
     </div>
