@@ -2,7 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { environment } from 'src/environments/environment';
-import { CapacidadesModel } from '../models/capacidades';
+import { PortafolioModel } from '../models/portafolio';
 
 @Injectable({
   providedIn: 'root'
@@ -12,19 +12,19 @@ export class PortafolioService {
   private apiServerUrl=environment.apiBaseUrl;
   constructor(private http:HttpClient) { }
 
-  public obtenerCapacidades():Observable<CapacidadesModel[]>{
-    return this.http.get<CapacidadesModel[]>(`${this.apiServerUrl}/capacidades/all`);
+  public obtenerPortafolio():Observable<PortafolioModel[]>{
+    return this.http.get<PortafolioModel[]>(`${this.apiServerUrl}/portafolio/all`);
   }
 
-  public agregarCapacidades(capacidades:CapacidadesModel):Observable<CapacidadesModel>{
-    return this.http.post<CapacidadesModel>(`${this.apiServerUrl}/capacidades/add`,capacidades);
+  public agregarPortafolio(portafolio:PortafolioModel):Observable<PortafolioModel>{
+    return this.http.post<PortafolioModel>(`${this.apiServerUrl}/portafolio/add`,portafolio);
   }
   
-  public editarCapacidades(capacidades:CapacidadesModel):Observable<CapacidadesModel>{
-    return this.http.put<CapacidadesModel>(`${this.apiServerUrl}/capacidades/update`,capacidades);
+  public editarPortafolio(portafolio:PortafolioModel):Observable<PortafolioModel>{
+    return this.http.put<PortafolioModel>(`${this.apiServerUrl}/portafolio/update`,portafolio);
   }
 
-  public deleteCapacidades(capacidadesId:number):Observable<void>{
-    return this.http.delete<void>(`${this.apiServerUrl}/capacidades/delete/${capacidadesId}`);
+  public deletePortafolio(portafolioId:number):Observable<void>{
+    return this.http.delete<void>(`${this.apiServerUrl}/portafolio/delete/${portafolioId}`);
   }
 }
