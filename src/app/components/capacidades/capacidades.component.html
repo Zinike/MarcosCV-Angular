@@ -3,8 +3,10 @@
       <h2>¡Tecnologias que manejo!</h2>
       <div class="cards">
         <div *ngFor="let capacidad of capacidades" class="card">
-          <div class="titulo">{{capacidad.categoria}}</div>
-          <div class="imagen">{{capacidad.imagen}}</div>
+          <div class="titulo">{{capacidad.categoria}}          </div>
+          <div class="imagenes">
+            <img src="{{capacidad.imagen}}" class="imagen-de-tecn" alt="image">
+          </div>
         </div>
       </div>
   </div>
