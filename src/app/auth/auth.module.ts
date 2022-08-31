@@ -8,7 +8,7 @@ import { AuthService } from '../servicios/auth.service';
 
 
 @NgModule({
-  declarations: [LoginComponent],
+  declarations: [],
   imports: [
     CommonModule,
     FormsModule ,
