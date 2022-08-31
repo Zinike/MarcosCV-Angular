@@ -10,6 +10,7 @@ import { CapacidadesComponent } from './components/capacidades/capacidades.compo
 import { FooterComponent } from './components/footer/footer.component';
 import { PortafolioComponent } from './components/portafolio/portafolio.component';
 import { ContactoComponent } from './components/contacto/contacto.component';
+import { LoginComponent } from './auth/login/login.component';
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import { ContactoComponent } from './components/contacto/contacto.component';
     CapacidadesComponent,
     FooterComponent,
     PortafolioComponent,
-    ContactoComponent
+    ContactoComponent,
+    LoginComponent,
   ],
   imports: [
     BrowserModule,
