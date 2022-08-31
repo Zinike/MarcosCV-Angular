@@ -13,7 +13,8 @@ import { AuthService } from '../servicios/auth.service';
     CommonModule,
     FormsModule ,
     AuthRoutingModule,
-    HttpClientModule],
+    HttpClientModule
+  ],
   providers:[AuthService]
 })
 export class AuthModule { }

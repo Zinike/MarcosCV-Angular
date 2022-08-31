@@ -3,8 +3,6 @@ import { Router } from '@angular/router';
 import { AuthService } from '../../servicios/auth.service';
 import { UsuarioModel } from '../../models/usuario';
 
-
-
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
@@ -17,10 +15,7 @@ export class LoginComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  onLogin(form):void{
-    this.authService.login(form.value).subscribe(res=>{
-      this.router.navigateByUrl('/auth')
-    })
+  onLogin(form):void {
+    this.authService.login(form.value).subscribe(res=>{this.router.navigateByUrl('/auth')})
   }
-
 }

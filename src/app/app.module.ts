@@ -21,8 +21,7 @@ import { LoginComponent } from './auth/login/login.component';
     CapacidadesComponent,
     FooterComponent,
     PortafolioComponent,
-    ContactoComponent,
-    LoginComponent,
+    ContactoComponent
   ],
   imports: [
     BrowserModule,

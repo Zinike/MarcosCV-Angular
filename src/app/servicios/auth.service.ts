@@ -11,7 +11,7 @@ export class AuthService {
 
   AUTH_SERVER: string = 'http://localhost:8080';
   authSubject = new BehaviorSubject(false);
-  private token: string;
+  private token: string | undefined;
   constructor(private httpClient:HttpClient){}
 
   login(user: UsuarioModel): Observable<JwtResponseI> {
@@ -27,13 +27,5 @@ export class AuthService {
     localStorage.setItem("EXPIRES_IN", expireTime);
     this.token = token;
   }
-
-  private getToken(): string {
-    if (!this.token){
-      this.token = localStorage.getItem("ACCESS_TOKEN");
-    }
-    return this.token;
-  }
-
 }
 

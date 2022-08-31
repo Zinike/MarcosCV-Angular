@@ -4,7 +4,7 @@
         
         <h2 class="login-header">Ingresa</h2>
       
-        <form frmLogin="ngForm" class="login-container" (ngSubmit)="onLogin(frmLogin)" >
+        <form #form="ngForm" class="login-container" (ngSubmit)="onLogin(form)" >
           <p><input type="email" name="email" placeholder="Email" ngModel required></p>
           <p><input type="password" name="password" placeholder="Password" ngModel required></p>
           <p><input type="submit" value="Loguear"></p>
