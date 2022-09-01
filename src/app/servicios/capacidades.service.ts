@@ -9,7 +9,7 @@ import { CapacidadesModel } from '../models/capacidades';
 })
 export class CapacidadesService {
 
-  private apiServerUrl=environment.apiBaseUrl;
+  private apiServerUrl='http://localhost:8080';
   constructor(private http:HttpClient) { }
 
   public obtenerCapacidades():Observable<CapacidadesModel[]>{
