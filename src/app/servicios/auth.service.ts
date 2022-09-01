@@ -9,13 +9,13 @@ import { Token } from '@angular/compiler';
 @Injectable()
 export class AuthService {
 
-  AUTH_SERVER: string = 'https://mycv-springboot.herokuapp.com';
+  AUTH_SERVER: string = 'https://mycv-springboot.herokuapp.com/api/login';
   authSubject = new BehaviorSubject(false);
   private token: string | undefined;
   constructor(private httpClient:HttpClient){}
 
   login(user: UsuarioModel): Observable<JwtResponseI> {
-    return this.httpClient.post<JwtResponseI>(`${this.AUTH_SERVER}/api/login`, user).pipe(tap((res: JwtResponseI) => {
+    return this.httpClient.post<JwtResponseI>(`${this.AUTH_SERVER}`, user).pipe(tap((res: JwtResponseI) => {
       if (res) {
         this.saveToken(res.dataUser.accessToken, res.dataUser.expireTime)
       }
