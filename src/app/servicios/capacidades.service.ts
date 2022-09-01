@@ -9,7 +9,7 @@ import { CapacidadesModel } from '../models/capacidades';
 })
 export class CapacidadesService {
 
-  private apiServerUrl='https://mycv-springboot.herokuapp.com/api/login';
+  private apiServerUrl='https://mycv-springboot.herokuapp.com';
   constructor(private http:HttpClient) { }
 
   public obtenerCapacidades():Observable<CapacidadesModel[]>{

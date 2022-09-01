@@ -9,7 +9,7 @@ import { Token } from '@angular/compiler';
 @Injectable()
 export class AuthService {
 
-  AUTH_SERVER: string = 'https://mycv-springboot.herokuapp.com/api/login';
+  AUTH_SERVER: string = 'https://mycv-springboot.herokuapp.com';
   authSubject = new BehaviorSubject(false);
   private token: string | undefined;
   constructor(private httpClient:HttpClient){}
