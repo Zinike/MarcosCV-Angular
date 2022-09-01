@@ -9,7 +9,7 @@ import { UsuarioModel } from '../models/usuario';
 })
 export class HeaderService {
   
-  private apiServerUrl='https://mycv-springboot.herokuapp.com/';
+  private apiServerUrl='https://mycv-springboot.herokuapp.com/api/login';
   constructor(private http: HttpClient) { }
 
   public getUser():Observable<UsuarioModel>{
