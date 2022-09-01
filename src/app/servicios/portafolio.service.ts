@@ -10,6 +10,7 @@ import { PortafolioModel } from '../models/portafolio';
 export class PortafolioService {
   
   private apiServerUrl=environment.apiBaseUrl;
+  
   constructor(private http:HttpClient) { }
 
   public obtenerPortafolio():Observable<PortafolioModel[]>{
