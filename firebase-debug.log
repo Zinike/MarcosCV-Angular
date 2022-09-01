@@ -1,36 +1,80 @@
-[debug] [2022-09-01T02:10:12.365Z] ----------------------------------------------------------------------
-[debug] [2022-09-01T02:10:12.367Z] Command:       /home/marcoszinga/.nvm/versions/node/v16.16.0/bin/node /home/marcoszinga/.nvm/versions/node/v16.16.0/bin/firebase deploy
-[debug] [2022-09-01T02:10:12.368Z] CLI Version:   11.8.0
-[debug] [2022-09-01T02:10:12.368Z] Platform:      linux
-[debug] [2022-09-01T02:10:12.368Z] Node Version:  v16.16.0
-[debug] [2022-09-01T02:10:12.369Z] Time:          Wed Aug 31 2022 23:10:12 GMT-0300 (hora estándar de Argentina)
-[debug] [2022-09-01T02:10:12.370Z] ----------------------------------------------------------------------
+[debug] [2022-09-01T02:58:07.393Z] ----------------------------------------------------------------------
+[debug] [2022-09-01T02:58:07.395Z] Command:       /home/marcoszinga/.nvm/versions/node/v16.16.0/bin/node /home/marcoszinga/.nvm/versions/node/v16.16.0/bin/firebase deploy
+[debug] [2022-09-01T02:58:07.395Z] CLI Version:   11.8.0
+[debug] [2022-09-01T02:58:07.395Z] Platform:      linux
+[debug] [2022-09-01T02:58:07.396Z] Node Version:  v16.16.0
+[debug] [2022-09-01T02:58:07.396Z] Time:          Wed Aug 31 2022 23:58:07 GMT-0300 (hora estándar de Argentina)
+[debug] [2022-09-01T02:58:07.396Z] ----------------------------------------------------------------------
 [debug] 
-[debug] [2022-09-01T02:10:12.443Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2022-09-01T02:10:12.444Z] > authorizing via signed-in user (marcoszinga94@gmail.com)
-[debug] [2022-09-01T02:10:12.445Z] [iam] checking project mycv-marcoszinga for permissions ["firebase.projects.get","firebasehosting.sites.update"]
-[debug] [2022-09-01T02:10:12.448Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/mycv-marcoszinga:testIamPermissions [none]
-[debug] [2022-09-01T02:10:12.448Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/mycv-marcoszinga:testIamPermissions x-goog-quota-user=projects/mycv-marcoszinga
-[debug] [2022-09-01T02:10:12.448Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/mycv-marcoszinga:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
-[debug] [2022-09-01T02:10:13.452Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/mycv-marcoszinga:testIamPermissions 200
-[debug] [2022-09-01T02:10:13.452Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/mycv-marcoszinga:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
-[debug] [2022-09-01T02:10:13.454Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/mycv-marcoszinga [none]
-[debug] [2022-09-01T02:10:14.572Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/mycv-marcoszinga 200
-[debug] [2022-09-01T02:10:14.572Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/mycv-marcoszinga {"projectId":"mycv-marcoszinga","projectNumber":"623266199615","displayName":"MyCV-Marcoszinga ","name":"projects/mycv-marcoszinga","resources":{"hostingSite":"mycv-marcoszinga"},"state":"ACTIVE","etag":"1_43d67110-172e-44d1-9abe-617d76ea76f3"}
+[debug] [2022-09-01T02:58:07.462Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-09-01T02:58:07.462Z] > authorizing via signed-in user (marcoszinga94@gmail.com)
+[debug] [2022-09-01T02:58:07.462Z] [iam] checking project mycv-marcoszinga for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2022-09-01T02:58:07.464Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/mycv-marcoszinga:testIamPermissions [none]
+[debug] [2022-09-01T02:58:07.465Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/mycv-marcoszinga:testIamPermissions x-goog-quota-user=projects/mycv-marcoszinga
+[debug] [2022-09-01T02:58:07.465Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/mycv-marcoszinga:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-09-01T02:58:13.660Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/mycv-marcoszinga:testIamPermissions 200
+[debug] [2022-09-01T02:58:13.660Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/mycv-marcoszinga:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-09-01T02:58:13.662Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/mycv-marcoszinga [none]
+[debug] [2022-09-01T02:58:14.122Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/mycv-marcoszinga 200
+[debug] [2022-09-01T02:58:14.123Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/mycv-marcoszinga {"projectId":"mycv-marcoszinga","projectNumber":"623266199615","displayName":"MyCV-Marcoszinga ","name":"projects/mycv-marcoszinga","resources":{"hostingSite":"mycv-marcoszinga"},"state":"ACTIVE","etag":"1_43d67110-172e-44d1-9abe-617d76ea76f3"}
 [info] 
 [info] === Deploying to 'mycv-marcoszinga'...
 [info] 
 [info] i  deploying hosting 
-[debug] [2022-09-01T02:10:14.574Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/mycv-marcoszinga [none]
-[debug] [2022-09-01T02:10:15.568Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/mycv-marcoszinga 200
-[debug] [2022-09-01T02:10:15.569Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/mycv-marcoszinga {"projectId":"mycv-marcoszinga","projectNumber":"623266199615","displayName":"MyCV-Marcoszinga ","name":"projects/mycv-marcoszinga","resources":{"hostingSite":"mycv-marcoszinga"},"state":"ACTIVE","etag":"1_43d67110-172e-44d1-9abe-617d76ea76f3"}
-[debug] [2022-09-01T02:10:15.572Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/623266199615/sites/mycv-marcoszinga/versions [none]
-[debug] [2022-09-01T02:10:15.572Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/623266199615/sites/mycv-marcoszinga/versions {"config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}
-[debug] [2022-09-01T02:10:17.138Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/623266199615/sites/mycv-marcoszinga/versions 500
-[debug] [2022-09-01T02:10:17.139Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/623266199615/sites/mycv-marcoszinga/versions {"error":{"code":500,"message":"Internal error encountered.","status":"INTERNAL"}}
+[debug] [2022-09-01T02:58:14.125Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/mycv-marcoszinga [none]
+[debug] [2022-09-01T02:58:15.191Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/mycv-marcoszinga 200
+[debug] [2022-09-01T02:58:15.192Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/mycv-marcoszinga {"projectId":"mycv-marcoszinga","projectNumber":"623266199615","displayName":"MyCV-Marcoszinga ","name":"projects/mycv-marcoszinga","resources":{"hostingSite":"mycv-marcoszinga"},"state":"ACTIVE","etag":"1_43d67110-172e-44d1-9abe-617d76ea76f3"}
+[debug] [2022-09-01T02:58:15.194Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/623266199615/sites/mycv-marcoszinga/versions [none]
+[debug] [2022-09-01T02:58:15.195Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/623266199615/sites/mycv-marcoszinga/versions {"config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2022-09-01T02:58:21.656Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/623266199615/sites/mycv-marcoszinga/versions 500
+[debug] [2022-09-01T02:58:21.656Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/623266199615/sites/mycv-marcoszinga/versions {"error":{"code":500,"message":"Internal error encountered.","status":"INTERNAL"}}
 [error] 
 [error] Error: HTTP Error: 500, Internal error encountered.
-[debug] [2022-09-01T02:10:17.609Z] Error Context: {
+[debug] [2022-09-01T02:58:21.657Z] Error Context: {
+  "body": {
+    "error": {
+      "code": 500,
+      "message": "Internal error encountered.",
+      "status": "INTERNAL"
+    }
+  },
+  "response": {
+    "statusCode": 500
+  }
+}
+[debug] [2022-09-01T02:59:09.128Z] ----------------------------------------------------------------------
+[debug] [2022-09-01T02:59:09.130Z] Command:       /home/marcoszinga/.nvm/versions/node/v16.16.0/bin/node /home/marcoszinga/.nvm/versions/node/v16.16.0/bin/firebase deploy
+[debug] [2022-09-01T02:59:09.130Z] CLI Version:   11.8.0
+[debug] [2022-09-01T02:59:09.131Z] Platform:      linux
+[debug] [2022-09-01T02:59:09.131Z] Node Version:  v16.16.0
+[debug] [2022-09-01T02:59:09.131Z] Time:          Wed Aug 31 2022 23:59:09 GMT-0300 (hora estándar de Argentina)
+[debug] [2022-09-01T02:59:09.131Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-09-01T02:59:09.190Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-09-01T02:59:09.190Z] > authorizing via signed-in user (marcoszinga94@gmail.com)
+[debug] [2022-09-01T02:59:09.190Z] [iam] checking project mycv-marcoszinga for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2022-09-01T02:59:09.193Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/mycv-marcoszinga:testIamPermissions [none]
+[debug] [2022-09-01T02:59:09.193Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/mycv-marcoszinga:testIamPermissions x-goog-quota-user=projects/mycv-marcoszinga
+[debug] [2022-09-01T02:59:09.194Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/mycv-marcoszinga:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-09-01T02:59:10.302Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/mycv-marcoszinga:testIamPermissions 200
+[debug] [2022-09-01T02:59:10.302Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/mycv-marcoszinga:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-09-01T02:59:10.303Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/mycv-marcoszinga [none]
+[debug] [2022-09-01T02:59:11.421Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/mycv-marcoszinga 200
+[debug] [2022-09-01T02:59:11.421Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/mycv-marcoszinga {"projectId":"mycv-marcoszinga","projectNumber":"623266199615","displayName":"MyCV-Marcoszinga ","name":"projects/mycv-marcoszinga","resources":{"hostingSite":"mycv-marcoszinga"},"state":"ACTIVE","etag":"1_43d67110-172e-44d1-9abe-617d76ea76f3"}
+[info] 
+[info] === Deploying to 'mycv-marcoszinga'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2022-09-01T02:59:11.425Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/mycv-marcoszinga [none]
+[debug] [2022-09-01T02:59:11.829Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/mycv-marcoszinga 200
+[debug] [2022-09-01T02:59:11.830Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/mycv-marcoszinga {"projectId":"mycv-marcoszinga","projectNumber":"623266199615","displayName":"MyCV-Marcoszinga ","name":"projects/mycv-marcoszinga","resources":{"hostingSite":"mycv-marcoszinga"},"state":"ACTIVE","etag":"1_43d67110-172e-44d1-9abe-617d76ea76f3"}
+[debug] [2022-09-01T02:59:11.832Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/623266199615/sites/mycv-marcoszinga/versions [none]
+[debug] [2022-09-01T02:59:11.832Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/623266199615/sites/mycv-marcoszinga/versions {"config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2022-09-01T02:59:13.269Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/623266199615/sites/mycv-marcoszinga/versions 500
+[debug] [2022-09-01T02:59:13.269Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/623266199615/sites/mycv-marcoszinga/versions {"error":{"code":500,"message":"Internal error encountered.","status":"INTERNAL"}}
+[error] 
+[error] Error: HTTP Error: 500, Internal error encountered.
+[debug] [2022-09-01T02:59:13.271Z] Error Context: {
   "body": {
     "error": {
       "code": 500,
