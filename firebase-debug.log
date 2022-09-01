@@ -1,15 +1,44 @@
-[debug] [2022-09-01T01:21:07.650Z] ----------------------------------------------------------------------
-[debug] [2022-09-01T01:21:07.651Z] Command:       /home/marcoszinga/.nvm/versions/node/v16.16.0/bin/node /home/marcoszinga/.nvm/versions/node/v16.16.0/bin/firebase login
-[debug] [2022-09-01T01:21:07.652Z] CLI Version:   11.8.0
-[debug] [2022-09-01T01:21:07.652Z] Platform:      linux
-[debug] [2022-09-01T01:21:07.652Z] Node Version:  v16.16.0
-[debug] [2022-09-01T01:21:07.652Z] Time:          Wed Aug 31 2022 22:21:07 GMT-0300 (hora estándar de Argentina)
-[debug] [2022-09-01T01:21:07.652Z] ----------------------------------------------------------------------
+[debug] [2022-09-01T02:10:12.365Z] ----------------------------------------------------------------------
+[debug] [2022-09-01T02:10:12.367Z] Command:       /home/marcoszinga/.nvm/versions/node/v16.16.0/bin/node /home/marcoszinga/.nvm/versions/node/v16.16.0/bin/firebase deploy
+[debug] [2022-09-01T02:10:12.368Z] CLI Version:   11.8.0
+[debug] [2022-09-01T02:10:12.368Z] Platform:      linux
+[debug] [2022-09-01T02:10:12.368Z] Node Version:  v16.16.0
+[debug] [2022-09-01T02:10:12.369Z] Time:          Wed Aug 31 2022 23:10:12 GMT-0300 (hora estándar de Argentina)
+[debug] [2022-09-01T02:10:12.370Z] ----------------------------------------------------------------------
 [debug] 
-[info] Already logged in as marcoszinga94@gmail.com
-[debug] [2022-09-01T01:21:17.729Z] Error: Timed out.
-    at Timeout._onTimeout (/home/marcoszinga/.nvm/versions/node/v16.16.0/lib/node_modules/firebase-tools/lib/utils.js:253:49)
-    at listOnTimeout (node:internal/timers:559:17)
-    at processTimers (node:internal/timers:502:7)
+[debug] [2022-09-01T02:10:12.443Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-09-01T02:10:12.444Z] > authorizing via signed-in user (marcoszinga94@gmail.com)
+[debug] [2022-09-01T02:10:12.445Z] [iam] checking project mycv-marcoszinga for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2022-09-01T02:10:12.448Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/mycv-marcoszinga:testIamPermissions [none]
+[debug] [2022-09-01T02:10:12.448Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/mycv-marcoszinga:testIamPermissions x-goog-quota-user=projects/mycv-marcoszinga
+[debug] [2022-09-01T02:10:12.448Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/mycv-marcoszinga:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-09-01T02:10:13.452Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/mycv-marcoszinga:testIamPermissions 200
+[debug] [2022-09-01T02:10:13.452Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/mycv-marcoszinga:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-09-01T02:10:13.454Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/mycv-marcoszinga [none]
+[debug] [2022-09-01T02:10:14.572Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/mycv-marcoszinga 200
+[debug] [2022-09-01T02:10:14.572Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/mycv-marcoszinga {"projectId":"mycv-marcoszinga","projectNumber":"623266199615","displayName":"MyCV-Marcoszinga ","name":"projects/mycv-marcoszinga","resources":{"hostingSite":"mycv-marcoszinga"},"state":"ACTIVE","etag":"1_43d67110-172e-44d1-9abe-617d76ea76f3"}
+[info] 
+[info] === Deploying to 'mycv-marcoszinga'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2022-09-01T02:10:14.574Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/mycv-marcoszinga [none]
+[debug] [2022-09-01T02:10:15.568Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/mycv-marcoszinga 200
+[debug] [2022-09-01T02:10:15.569Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/mycv-marcoszinga {"projectId":"mycv-marcoszinga","projectNumber":"623266199615","displayName":"MyCV-Marcoszinga ","name":"projects/mycv-marcoszinga","resources":{"hostingSite":"mycv-marcoszinga"},"state":"ACTIVE","etag":"1_43d67110-172e-44d1-9abe-617d76ea76f3"}
+[debug] [2022-09-01T02:10:15.572Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/623266199615/sites/mycv-marcoszinga/versions [none]
+[debug] [2022-09-01T02:10:15.572Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/623266199615/sites/mycv-marcoszinga/versions {"config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2022-09-01T02:10:17.138Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/623266199615/sites/mycv-marcoszinga/versions 500
+[debug] [2022-09-01T02:10:17.139Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/623266199615/sites/mycv-marcoszinga/versions {"error":{"code":500,"message":"Internal error encountered.","status":"INTERNAL"}}
 [error] 
-[error] Error: An unexpected error has occurred.
+[error] Error: HTTP Error: 500, Internal error encountered.
+[debug] [2022-09-01T02:10:17.609Z] Error Context: {
+  "body": {
+    "error": {
+      "code": 500,
+      "message": "Internal error encountered.",
+      "status": "INTERNAL"
+    }
+  },
+  "response": {
+    "statusCode": 500
+  }
+}
