@@ -1,6 +1,7 @@
 {
   "projects": {
-    "mycv-marcoszinga": "mycv-marcoszinga-32e08"
+    "mycv-marcoszinga": "mycv-marcoszinga-32e08",
+    "default": "mycv-marcoszinga-32e08"
   },
   "targets": {},
   "etags": {},
