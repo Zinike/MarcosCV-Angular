@@ -8,7 +8,7 @@ import { PortafolioModel } from '../models/portafolio';
 })
 export class PortafolioService {
   
-  private apiServerUrl='https://mycv-springboot.herokuapp.com';
+  private apiServerUrl='https://mycv-springboot.herokuapp.com/api';
   
   constructor(private http:HttpClient) { }
 
