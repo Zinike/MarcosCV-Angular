@@ -18,6 +18,8 @@ export class LoginComponent implements OnInit {
 
   onLogin(form: NgForm):void {
     this.authService.login(form.value).subscribe(
-      res=>{this.router.navigateByUrl('/auth')})
+      res=>{
+        console.log(res);
+        this.router.navigateByUrl('/auth');})
   }
 }
