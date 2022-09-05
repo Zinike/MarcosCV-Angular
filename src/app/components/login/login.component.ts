@@ -11,14 +11,20 @@ import { NgForm } from '@angular/forms';
 
 export class LoginComponent implements OnInit {
 
+  
+
   constructor(private authService: AuthService, private router:Router) { }
 
   ngOnInit(): void{}
 
   onLogin(form: NgForm):void {
+
+    const email=form.value.email;
+    const password=form.value.password;
+
     this.authService.login(form.value).subscribe(
       res=>{
-        console.log(res);
+        console.log(email, password)
         this.router.navigateByUrl('/auth');})
   }
 }

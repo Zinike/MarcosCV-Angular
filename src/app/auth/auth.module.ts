@@ -1,9 +1,9 @@
-import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { FormsModule } from "@angular/forms";
 import { HttpClientModule } from "@angular/common/http";
-import { AuthRoutingModule } from "./auth-routing.module";
+import { NgModule } from '@angular/core';
+import { FormsModule } from "@angular/forms";
 import { AuthService } from '../servicios/auth.service';
+import { AuthRoutingModule } from "./auth-routing.module";
 
 
 @NgModule({

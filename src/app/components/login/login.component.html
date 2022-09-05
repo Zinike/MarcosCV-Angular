@@ -1,13 +1,10 @@
-<div>
-  <div class="login">
-    <div class="login-triangle"></div>
-    <h2 class="login-header">Ingresa</h2>
-    <form #form="ngForm" (ngSubmit)="onLogin(form)" class="login-container">
+<div class="login">
+  <div class="login-triangle"></div>
+  <form #form="ngForm" (ngSubmit)="onLogin(form)" class="login-container">
 
-      <p><input type="email" name="email" placeholder="Email" ngModel required></p>
-      <p><input type="password" name="password" placeholder="Password" ngModel required></p>
-      <p><input type="submit" value="Loguear"></p>
-      
-    </form>
-  </div>
+    <p><input type="email" name="email" placeholder="Email" ngModel required></p>
+    <p><input type="password" name="password" placeholder="Password" ngModel required></p>
+    <p><input type="submit" value="Loguear"></p>
+
+  </form>
 </div>
