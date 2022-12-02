@@ -1,0 +1,13 @@
+<section id="tecnologiases">
+  <div class="contenedor">
+      <h2>¡Tecnologias que manejo!</h2>
+      <div class="cards">
+        <div class="card" *ngFor="let tecnologia of tecnologias">
+          <div class="titulo">{{tecnologia.categoria}}</div>
+          <div class="imagenes">
+            <img src="{{tecnologia.imagen}}" class="imagen-de-tecn" alt="image">
+          </div>
+        </div>
+      </div>
+  </div>
+</section>
