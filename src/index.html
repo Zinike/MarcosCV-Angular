@@ -11,11 +11,17 @@
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 
+
 <body>
   <div id="preloader" class="preloader" style="display: none;"></div>
 
     <app-root></app-root>
 
 </body>
+<script type="text/javascript">
+  var loader = document.getElementById("preloader");
+  window.addEventListener("load", function () {
+    loader.style.display = "none";})
+</script>
 
 </html>
