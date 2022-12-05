@@ -9,25 +9,8 @@ import { HeaderService } from 'src/app/servicios/header.service';
   styleUrls: ['./contacto.component.css']
 })
 export class ContactoComponent implements OnInit {
-
-  public usuario:UsuarioModel | undefined;
-  public editUsuario:UsuarioModel | undefined;
-
-  constructor(private headerService:HeaderService) { }
+  constructor() { }
 
   ngOnInit(): void {
-    this.getUsuario();
   }
-
-  public getUsuario():void{
-    this.headerService.getUser().subscribe({
-      next:(response: UsuarioModel) => {
-        this.usuario=response;
-      },
-      error:(error:HttpErrorResponse)=>{
-        alert(error.message);
-      }
-    })
-  }
-
 }

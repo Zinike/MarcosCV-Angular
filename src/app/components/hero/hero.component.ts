@@ -9,26 +9,8 @@ import { HeaderService } from 'src/app/servicios/header.service';
   styleUrls: ['./hero.component.css']
 })
 export class HeroComponent implements OnInit {
-
-
-  public usuario:UsuarioModel | undefined;
-  public editUsuario:UsuarioModel | undefined;
-  
-  constructor(private headerService:HeaderService) { }
+  constructor() { }
 
   ngOnInit(): void {
-    this.getUsuario();
-  }
-
-
-  public getUsuario():void{
-    this.headerService.getUser().subscribe({
-      next:(response: UsuarioModel) => {
-        this.usuario=response;
-      },
-      error:(error:HttpErrorResponse)=>{
-        alert(error.message);
-      }
-    })
   }
 }

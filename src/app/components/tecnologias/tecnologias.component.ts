@@ -9,23 +9,8 @@ import { TecnologiasService } from 'src/app/servicios/tecnologias.service';
   styleUrls: ['./tecnologias.component.css']
 })
 export class TecnologiasComponent implements OnInit {
-
-  public tecnologias:TecnologiasModel[]=[];
-
-  constructor(private tecnologiasService:TecnologiasService) { }
+  constructor() { }
 
   ngOnInit(): void {
-    this.obtenerTecnologias();
-  }
-
-  public obtenerTecnologias():void{
-    this.tecnologiasService.obtenerTecnologias().subscribe({
-      next:(Response:TecnologiasModel[]) =>{
-        this.tecnologias=Response;
-      },
-      error:(error:HttpErrorResponse)=>{
-        alert(error.message);
-      }
-    })
   }
 }
